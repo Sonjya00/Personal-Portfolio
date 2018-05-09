@@ -1,0 +1,356 @@
+/*GENERAL*/
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  font-size: 2.5em;
+  padding-top: 0.5em;
+  width: 90%;
+}
+
+/*HEADER*/
+
+.header {
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: 0;
+  width: 65%;
+}
+
+.header h1 {
+  font-size: 1.7em;
+  margin-top: 80px;
+  text-align: right;
+  width: 95%;
+}
+
+.header p {
+  font-size: 0.9em;
+  text-align: right;
+  width: 100%;
+}
+
+.logo-udacity {
+  float: right;
+  height: 50px;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+/*NAVIGATION BAR*/
+
+#menu svg {
+  fill: #E0E0E0;
+  float: right;
+  height: 60px;
+}
+
+#menu svg:hover {
+  cursor: pointer;
+  fill: #1fb4e2;
+}
+
+.nav {
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  height: 180px;
+  width: 140px;
+  position: absolute;
+  -webkit-transform: translate(-140px, 0);
+  transform: translate(-140px, 0);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.nav li {
+  border-bottom: 1px solid #fff;
+  display: block;
+  line-height: 2.5em;
+  margin-left: -20px;
+  width: 100%;
+}
+
+.nav.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*WELCOME SECTION*/
+
+.welcome__container {
+  background-position: 50% 50%;
+  height: 500px;
+}
+
+.welcome__message {
+  position: relative;
+  top: 5%;
+}
+
+.welcome__message h2 {
+  font-size: 1.6em;
+}
+
+.welcome__message p {
+  font-size: 0.8em;
+}
+
+/*WORKS SECTION*/
+
+.works__container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+.works__item {
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+}
+
+.work-1 {
+  order: 0;
+  width: 70%;
+}
+
+.work-2 {
+  order: 1;
+  width: 70%;
+}
+
+.work-3 {
+  order: 3;
+  width: 70%;
+}
+
+.work-4 {
+  order: 4;
+  width: 70%;
+}
+
+.trading-card-img {
+  max-width: 80%;
+  padding-top: 15px;
+}
+
+.pixel-lab-img {
+  max-width: 80%;
+}
+
+.fortune-cookie-img {
+  max-width: 80%;
+}
+
+/*FOOTER*/
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+.footer__location {
+  width: 100%;
+}
+
+.footer__contacts {
+  width: 100%;
+}
+
+.footer__awards {
+  width: 100%;
+}
+
+.footer__about {
+  order: 3;
+  width: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 370px) {
+  .header h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .header h1 {
+    font-size: 2.2em;
+  }
+  #menu svg {
+    height: 80px;
+  }
+  .logo-udacity {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .header {
+    font-size: 1.8em;
+    margin-right: 10px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .header h1, .logo-udacity {
+    margin-top: 40px;
+  }
+  .header p {
+    font-size: 0.8em;
+  }
+  .header h1, .header p {
+    margin-left: 0;
+    text-align: right;
+    width: 100%;
+  }
+  .logo-udacity {
+    float: left;
+    height: 80px;
+  }
+  #about, #works:target {
+    padding-top: 50px;
+  }
+  #menu svg {
+    display: none;
+  }
+  .nav {
+    border-radius: 0;
+    max-height: 60px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav li {
+    border-bottom: none;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.5em;
+    list-style-type: none;
+    margin-left: 0;
+    text-align: center;
+    width: 32%;
+  }
+  .nav a {
+    line-height: 1.6;
+    margin: -22px;
+    padding: 22px;
+    position: relative;
+  }
+  .logo-udacity {
+   max-height: 120px;
+  }
+  .welcome__container {
+    background-size: cover;
+  }
+  .welcome__message {
+    top: 0;
+  }
+  .welcome__message h2 {
+    font-size: 1.7em;
+  }
+  .welcome__message p {
+    font-size: 0.9em;
+  }
+  .works__item {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .work-1 {
+    order: 0;
+    width: 46%;
+  }
+  .work-2 {
+    order: 1;
+    width: 45%;
+  }
+  .work-3 {
+    order: 2;
+    width: 45%;
+  }
+  .work-4 {
+    order: 3;
+    width: 45%;
+  }
+  .trading-card-img {
+    max-width: 60%;
+    padding-top: 15px;
+  }
+  .pixel-lab-img {
+    max-width: 80%;
+  }
+  .fortune-cookie-img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .nav li {
+    width: 28%;
+  }
+  .footer__container {
+    height: 230px;
+  }
+  .footer__location {
+    width: 25%;
+  }
+  .footer__contacts {
+    width: 45%;
+  }
+  .footer__awards {
+    width: 30%;
+  }
+  .footer__about {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    margin-right: auto;
+  }
+  .nav li {
+    width: 25%;
+  }
+  .works__item {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .work-1 {
+    order: 0;
+    width: 20%;
+  }
+  .work-2 {
+    order: 3;
+    width: 20%;
+  }
+  .work-3 {
+    order: 2;
+    width: 26%;
+  }
+  .work-4 {
+    order: 4;
+    width: 26%;
+  }
+  .trading-card-img {
+    max-width: 80%;
+    padding-top: 15px;
+  }
+  .pixel-lab-img {
+    max-width: 90%;
+  }
+  .fortune-cookie-img {
+    max-width: 90%;
+  }
+}
