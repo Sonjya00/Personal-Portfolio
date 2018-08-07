@@ -1,59 +1,78 @@
 /*GENERAL*/
+
 body {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 /*HEADINGS*/
+
 .header {
   font-size: 2.5rem;
   margin-left: auto;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .heading--main {
   font-size: 3.8rem;
   text-align: right;
   width: 65%;
   margin-right: 0px;
-  margin-left: auto; }
-  .heading--main--sub {
+  margin-left: auto;
+
+  &--sub {
     font-size: 2rem;
     text-align: right;
-    width: 100%; }
+    width: 100%;
+  }
+}
 
 .heading-secondary {
   font-size: 3.5rem;
   padding-top: 0.5em;
-  width: 90%; }
+  width: 90%;
+}
 
 .heading--tertiary {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+}
 
 /*HEADER SECTION*/
+
 .header {
   background-size: cover;
   background-position: 50% 50%;
-  margin-top: 5.9rem; }
+  margin-top: 5.9rem;
+  // height: 500px;
+}
 
 .header__body {
   position: relative;
-  top: 5%; }
+  top: 5%;
+}
+
 
 .header__body--text {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 /*NAVIGATION BAR*/
+
 #menu svg {
   fill: #4F3A83;
   position: absolute;
   top: 0;
   right: 10px;
-  height: 50px; }
+  height: 50px;
+}
 
 #menu svg:hover {
   cursor: pointer;
-  fill: #1fb4e2; }
+  fill: #1fb4e2;
+}
 
 .nav {
+  //background-color: #fff;
   border-radius: 0 5px 5px 0;
   font-size: 1.6rem;
   height: 18rem;
@@ -63,100 +82,144 @@ body {
   -webkit-transform: translate(-14rem, 0);
   transform: translate(-14rem, 0);
   transition: transform 0.3s ease;
-  z-index: 10; }
+  z-index: 10;
+}
 
 .nav__item {
   border-bottom: 1px solid #fff;
   display: inline-block;
   line-height: 4.5rem;
   margin-left: -2rem;
-  width: 100%; }
+  width: 100%;
+}
 
 .nav.open {
   -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+}
 
 /*WORKS SECTION*/
+
 .works__list {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  width: 100%; }
+  width: 100%;
+}
 
 .work__item {
   display: inline-block;
   margin: 3rem 1rem;
   padding: .8rem;
-  width: 100%; }
-  .work__item__textbox {
+  width: 100%;
+
+  &__textbox {
     font-size: 1.6rem;
-    min-height: 80px; }
-    .work__item__textbox--h3 {
-      font-size: 2rem; }
-  .work__item--more-btn {
+    min-height: 80px;
+    &--h3 {
+      font-size: 2rem;
+    }
+  }
+  &--more-btn,
+  {
     font-size: 1.6rem;
-    margin: 1rem; }
+    margin: 1rem;
+  }
+}
 
 .work__item--img {
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+}
 
 .trading-card-img {
-  max-width: 80%; }
+  max-width: 80%;
+}
 
 #pixel-lab-img {
-  max-width: 90%; }
+  max-width: 90%;
+}
 
 #fortune-cookie-img {
-  max-width: 90%; }
+  max-width: 90%;
+}
 
 /*FOOTER*/
+
 .footer__container {
   font-size: 1.6rem;
   display: flex;
   flex-wrap: wrap;
-  height: 500px; }
+  height: 500px;
+}
 
 .footer__location {
-  width: 100%; }
+  width: 100%;
+}
 
 .footer__contacts {
-  width: 100%; }
+  width: 100%;
+}
 
 .footer__awards {
-  width: 100%; }
+  width: 100%;
+}
 
 .footer__about {
   order: 3;
-  width: 100%; }
+  width: 100%;
+}
 
 /*MEDIA QUERIES*/
+
 @media screen and (min-width: 370px) {
   .heading--main {
-    font-size: 6rem; }
+    font-size: 6rem;
+  }
   .heading--main--sub {
-    font-size: 2rem; } }
+    font-size: 2rem;
+  }
+}
 
 @media screen and (min-width: 400px) {
+  // .heading--main {
+  //   font-size: 5.5rem;
+  // }
   #menu svg {
-    height: 70px; } }
+    height: 70px;
+  }
+}
 
 @media screen and (min-width: 460px) {
   .work__item {
     margin-left: 10px;
     margin-right: 10px;
-    width: calc((100% - 40px)/2); } }
+    width: calc((100% - 40px)/2);
+  }
+}
 
 @media screen and (min-width: 530px) {
   .header {
+    //font-size: 1.8em;
+    //margin-right: 10px;
+    //margin-top: 70px;
     width: 100%;
-    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0 80%); }
+    //clip-path: polygon(0 20%, 20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
+    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+  }
+  .heading--main {
+    //margin-top: 40px;
+  }
   .heading--main, .heading--main--sub {
+    //margin-left: 0;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+  }
   #about, #works:target {
-    padding-top: 50px; }
+    padding-top: 50px;
+  }
   #menu svg {
-    display: none; }
+    display: none;
+  }
   .nav {
     border-radius: 0;
     height: 60px;
@@ -165,7 +228,8 @@ body {
     top: 0;
     width: 100%;
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   .nav__item {
     border-bottom: none;
     display: inline-block;
@@ -174,51 +238,82 @@ body {
     list-style-type: none;
     margin-left: 0;
     text-align: center;
-    width: 32%; }
+    width: 32%;
+  }
   .nav__item--link {
     line-height: 1.6;
     margin: -22px;
     padding: 22px;
-    position: relative; }
+    position: relative;
+  }
+  // .welcome__container {
+  //   background-size: cover;
+  // }
   .header__body {
-    top: 0; }
+    top: 0;
+  }
+  // .header__body p {
+  //   font-size: 0.9em;
+  // }
+
   .trading-card-img {
     max-width: 72%;
-    padding-top: 15px; }
+    padding-top: 15px;
+  }
   #pixel-lab-img {
-    max-width: 100%; }
+    max-width: 100%;
+  }
   #fortune-cookie-img {
-    max-width: 100%; } }
+    max-width: 100%;
+  }
+}
 
 @media screen and (min-width: 650px) {
   .nav__item {
-    width: 28%; }
+    width: 28%;
+  }
   .footer__container {
-    height: 230px; }
+    height: 230px;
+  }
   .footer__location {
-    width: 25%; }
+    width: 25%;
+  }
   .footer__contacts {
-    width: 45%; }
+    width: 45%;
+  }
   .footer__awards {
-    width: 30%; }
+    width: 30%;
+  }
   .footer__about {
     order: 3;
-    width: 100%; }
+    width: 100%;
+  }
   .work__item {
-    width: calc((100% - 60px)/3); } }
+    width: calc((100% - 60px)/3);
+    //width: calc((100% - 80px)/4);
+  }
+}
 
 @media screen and (min-width: 1000px) {
   .header {
     display: inline-block;
-    margin: 59px auto 0; }
+    margin: 59px auto 0;
+  }
   .nav__item {
-    width: 25%; }
+    width: 25%;
+  }
   .work__item {
-    width: calc((100% - 80px)/4); }
+    width: calc((100% - 80px)/4);
+  }
+
   .trading-card-img {
     max-width: 70%;
-    padding-top: 15px; }
+    padding-top: 15px;
+  }
   #pixel-lab-img {
-    max-width: 90%; }
+    max-width: 90%;
+  }
   #fortune-cookie-img {
-    max-width: 90%; } }
+    max-width: 90%;
+  }
+}
