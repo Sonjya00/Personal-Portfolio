@@ -98,7 +98,7 @@ body {
     margin: 1rem; }
 
 .work__item--img {
-  padding-top: 1.5rem; }
+  margin-top: 1.5rem; }
 
 .trading-card-img {
   max-width: 80%; }
@@ -184,7 +184,7 @@ body {
     top: 0; }
   .trading-card-img {
     max-width: 72%;
-    padding-top: 15px; }
+    margin-top: 15px; }
   #pixel-lab-img {
     max-width: 100%; }
   #fortune-cookie-img {
@@ -217,7 +217,7 @@ body {
     width: calc((100% - 80px)/4); }
   .trading-card-img {
     max-width: 70%;
-    padding-top: 15px; }
+    margin-top: 15px; }
   #pixel-lab-img {
     max-width: 90%; }
   #fortune-cookie-img {

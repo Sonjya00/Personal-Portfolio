@@ -5,6 +5,7 @@ $color-primary-gray-medium: #C5CEE9;
 $color-primary-aqua-light: #11ffbd;
 $color-primary-aqua-medium: darken($color-primary-aqua-light, 25%);
 $color-primary-aqua-dark: #1e8495;
+$color-primary-pink: #C441F1;
 $color-primary-blue-light: #1fb4e2;
 
 // #27afc4 #ff834f #ff6347 #7fffda #ECA42E;
@@ -15,6 +16,10 @@ $color-bw-02: #c0c0c0;
 $color-bw-03: #5b5b5b;
 $color-bw-04: #3f3e3e;
 $color-bw-05: #252831;
+
+@mixin box-shadow-default {
+	box-shadow: 2px 2px .3rem rgba($color-bw-05, .2);
+}
 
 $main-font: 'Raleway', sans-serif;
 
@@ -52,19 +57,21 @@ body {
 
 .heading-secondary {
   border-radius: 5px;
-  color: $color-primary-aqua-medium;
+  //color: $color-primary-pink;
+  color: darken($color-primary-purple-light, 5%);
   //color: $color-primary-aqua-dark;
   display: block;
   font-weight: bold;
   letter-spacing: 5px;
   margin: 10px auto;
   text-align: center;
-  //text-shadow: 3px 3px 10px $color-primary-aqua-light;
+  //text-shadow: 1px 1px 5px rgba($color-primary-aqua-light, 0.2);
   text-transform: uppercase;
 }
 
 .heading-secondary:after {
-  border-bottom: 3px double $color-primary-aqua-medium;
+  border-bottom: 3px double darken($color-primary-purple-light, 5%);;
+  //border-bottom: 3px double $color-primary-aqua-medium;
   content: '';
   display: inline-block;
   height: 100%;
@@ -153,10 +160,12 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   text-align: center;
+  @include box-shadow-default;
 }
 
 .work__item--img {
   border-radius: 5px;
+  @include box-shadow-default;
 }
 
 .work__item__textbox {
@@ -165,8 +174,10 @@ body {
 }
 
 .work__item__textbox--h3 {
-  color: $color-primary-aqua-dark;
-  font-weight: bold;
+  color: #C441F1;
+  //color: darken($color-primary-purple-light, 20%);
+  //text-shadow: 1px 1px 5px rgba($color-primary-aqua-dark, 0.5);
+  font-weight: 500;
 }
 
 .work__item--more-btn,
@@ -187,7 +198,7 @@ body {
 }
 
 .heading--tertiary {
-  color: lighten($color-primary-purple-light, 10%);
+  color: lighten($color-primary-pink, 10%);
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -235,6 +246,6 @@ body {
 }
 
 .contacts-link:hover {
-  background-color: $color-primary-aqua-dark;
+  background-color: darken(#27afc4, 18%);
   cursor: pointer;
 }
