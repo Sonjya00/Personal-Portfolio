@@ -1,11 +1,11 @@
-#Udacity Portfolio Project
+# Portfolio
 
-Personal portfolio made for completion of the [Udacity's Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001?v=fe1).
+Personal portfolio built using HTML, CSS, Flexbox and media queries.
 
+## How to start
 
-##Project Description
-Built a fully responsive webpage using HTML, CSS, Flexbox and media queries.
+Download/ clone the repository and open the file `index.html`. Alternatively, the portfolio can be accessed from [here](https://sonjya00.github.io/Personal-Portfolio/).
 
-##Credits
+## Credits
 
-Background image: [https://unsplash.com/photos/Skf7HxARcoc](https://unsplash.com/photos/Skf7HxARcoc).
+Background image: [Unsplash](https://unsplash.com/photos/5124Lka7ahU).
