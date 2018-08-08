@@ -185,7 +185,8 @@ body {
   }
   &__textbox {
     background: linear-gradient(to top, $color-primary-dark-green, $color-bw-05);
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+		clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
     color: $color-primary-gray-medium;
     margin: 0;
     opacity: .95;
