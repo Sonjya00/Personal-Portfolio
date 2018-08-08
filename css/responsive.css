@@ -86,11 +86,12 @@ body {
 .work__item {
   display: inline-block;
   margin: 3rem 1rem;
-  padding: .8rem;
+  padding: 0 0 1.5rem;
   width: 100%; }
   .work__item__textbox {
-    font-size: 1.6rem;
-    min-height: 80px; }
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    min-height: 90px; }
     .work__item__textbox--h3 {
       font-size: 2rem; }
   .work__item--more-btn {
@@ -98,16 +99,9 @@ body {
     margin: 1rem; }
 
 .work__item--img {
-  margin-top: 1.5rem; }
-
-.trading-card-img {
-  max-width: 80%; }
-
-#pixel-lab-img {
-  max-width: 90%; }
-
-#fortune-cookie-img {
-  max-width: 90%; }
+  margin-top: 0;
+  max-width: 90%;
+  max-height: 32rem; }
 
 /*FOOTER*/
 .footer__container {
@@ -181,14 +175,7 @@ body {
     padding: 22px;
     position: relative; }
   .header__body {
-    top: 0; }
-  .trading-card-img {
-    max-width: 72%;
-    margin-top: 15px; }
-  #pixel-lab-img {
-    max-width: 100%; }
-  #fortune-cookie-img {
-    max-width: 100%; } }
+    top: 0; } }
 
 @media screen and (min-width: 650px) {
   .nav__item {
@@ -214,11 +201,4 @@ body {
   .nav__item {
     width: 25%; }
   .work__item {
-    width: calc((100% - 80px)/4); }
-  .trading-card-img {
-    max-width: 70%;
-    margin-top: 15px; }
-  #pixel-lab-img {
-    max-width: 90%; }
-  #fortune-cookie-img {
-    max-width: 90%; } }
+    width: calc((100% - 80px)/4); } }
