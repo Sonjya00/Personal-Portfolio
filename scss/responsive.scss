@@ -8,27 +8,26 @@ body {
 /*HEADINGS*/
 
 .header {
-  font-size: 2.5rem;
+  //font-size: 2.5rem;
   margin-left: auto;
   margin-right: 0;
+  text-align: right;
 }
 
 .heading--main {
-  font-size: 3.8rem;
-  text-align: right;
-  width: 65%;
-  margin-right: 0px;
+  font-size: 3.6rem;
   margin-left: auto;
+  margin-right: 0;
+  width: 65%;
 
   &--sub {
-    font-size: 2rem;
-    text-align: right;
+    font-size: 1.6rem;
     width: 100%;
   }
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   padding-top: 0.5em;
   width: 90%;
 }
@@ -43,7 +42,6 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   margin-top: 5.9rem;
-  // height: 500px;
 }
 
 .header__body {
@@ -51,9 +49,16 @@ body {
   top: 5%;
 }
 
-
 .header__body--text {
   font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0 2rem 5rem;
+}
+
+.header__body--avatar {
+  border-radius: 40%;
+  margin-top: 0;
+  max-width: 12rem;
 }
 
 /*NAVIGATION BAR*/
@@ -72,7 +77,6 @@ body {
 }
 
 .nav {
-  //background-color: #fff;
   border-radius: 0 5px 5px 0;
   font-size: 1.6rem;
   height: 18rem;
@@ -107,7 +111,7 @@ body {
   width: 100%;
 }
 
-.work__item {
+.works__item {
   display: inline-block;
   margin: 3rem 1rem;
   padding: 0 0 1.5rem;
@@ -126,25 +130,12 @@ body {
     font-size: 1.6rem;
     margin: 1rem;
   }
+  &--img {
+    margin-top: 2rem;
+    max-width: 90%;
+    max-height: 32rem;
+  }
 }
-
-.work__item--img {
-  margin-top: 2rem;
-  max-width: 90%;
-  max-height: 32rem;
-}
-
-// .trading-card-img {
-//   max-width: 80%;
-// }
-//
-// #pixel-lab-img {
-//   max-width: 90%;
-// }
-//
-// #fortune-cookie-img {
-//   max-width: 90%;
-// }
 
 /*FOOTER*/
 
@@ -152,11 +143,15 @@ body {
   font-size: 1.6rem;
   display: flex;
   flex-wrap: wrap;
-  height: 500px;
+  height: 70rem;
 }
 
 .footer__location {
   width: 100%;
+}
+
+.footer__location p {
+  font-size: 1.6rem;
 }
 
 .footer__contacts {
@@ -170,6 +165,22 @@ body {
 .footer__about {
   order: 3;
   width: 100%;
+}
+
+/*CONTACT BTNS*/
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 0;
+  width: 70%;
+
+  &--item {
+    width: calc(100% / 3);
+    height: calc(100% / 2);
+  }
 }
 
 /*MEDIA QUERIES*/
@@ -193,7 +204,7 @@ body {
 }
 
 @media screen and (min-width: 460px) {
-  .work__item {
+  .works__item {
     margin-left: 10px;
     margin-right: 10px;
     width: calc((100% - 40px)/2);
@@ -214,7 +225,6 @@ body {
     //margin-top: 40px;
   }
   .heading--main, .heading--main--sub {
-    //margin-left: 0;
     text-align: center;
     width: 100%;
   }
@@ -250,26 +260,9 @@ body {
     padding: 22px;
     position: relative;
   }
-  // .welcome__container {
-  //   background-size: cover;
-  // }
   .header__body {
     top: 0;
   }
-  // .header__body p {
-  //   font-size: 0.9em;
-  // }
-
-  // .trading-card-img {
-  //   max-width: 72%;
-  //   ////margin-top: 15px;
-  // }
-  // #pixel-lab-img {
-  //   max-width: 100%;
-  // }
-  // #fortune-cookie-img {
-  //   max-width: 100%;
-  // }
 }
 
 @media screen and (min-width: 650px) {
@@ -277,7 +270,7 @@ body {
     width: 28%;
   }
   .footer__container {
-    height: 230px;
+    height: 26rem;
   }
   .footer__location {
     width: 25%;
@@ -292,9 +285,8 @@ body {
     order: 3;
     width: 100%;
   }
-  .work__item {
+  .works__item {
     width: calc((100% - 60px)/3);
-    //width: calc((100% - 80px)/4);
   }
 }
 
@@ -306,18 +298,7 @@ body {
   .nav__item {
     width: 25%;
   }
-  .work__item {
+  .works__item {
     width: calc((100% - 80px)/4);
   }
-
-  // .trading-card-img {
-  //   max-width: 70%;
-  //   //margin-top: 15px;
-  // }
-  // #pixel-lab-img {
-  //   max-width: 90%;
-  // }
-  // #fortune-cookie-img {
-  //   max-width: 90%;
-  // }
 }

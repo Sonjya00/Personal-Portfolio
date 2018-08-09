@@ -69,13 +69,13 @@ projects.forEach(function(project) {
   const worksList = document.getElementById('worksList');
 
   let textBox = document.createElement('div');
-  textBox.className = 'work__item__textbox';
+  textBox.className = 'works__item__textbox';
 
   let container = document.createElement('div');
-  container.className = 'work__item';
+  container.className = 'works__item';
 
   let title = document.createElement('h3');
-  title.className = 'work__item__textbox--h3';
+  title.className = 'works__item__textbox--h3';
   title.textContent = project.title;
 
   let p1 = document.createElement('p');
@@ -85,13 +85,13 @@ projects.forEach(function(project) {
   p2.textContent = project.description;
 
   let link = document.createElement('a');
-  link.className = 'work__item--more-btn';
+  link.className = 'works__item--more-btn';
   link.setAttribute('href', project.url);
   link.setAttribute('target', '_blank');
   link.textContent = 'See code';
 
   let img = document.createElement('img');
-  img.className = 'work__item--img';
+  img.className = 'works__item--img';
   img.setAttribute('src', project.img);
   img.setAttribute('alt', project.alt);
 

@@ -8,61 +8,44 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
-    <a id="menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
-      </svg>
-    </a>
+  <a id="menu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+    </svg>
+  </a>
 
-    <nav id="drawer" class="nav">
-      <ul>
-        <li class="nav__item"><a class="nav__item--link" href="#about">About</a></li>
-        <li class="nav__item"><a class="nav__item--link" href="#works">Works</a></li>
-        <li class="nav__item"><a class="nav__item--link" href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
+  <nav id="drawer" class="nav">
+    <ul>
+      <li class="nav__item"><a class="nav__item--link" href="#about">About</a></li>
+      <li class="nav__item"><a class="nav__item--link" href="#works">Works</a></li>
+      <li class="nav__item"><a class="nav__item--link" href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
 
-    <header id="about" class="header">
+  <header id="about" class="header">
 
-      <div class="header__title">
-        <h1 class="heading--main">Sonia Gorla</h1>
-        <p class="heading--main--sub">Front-End Web Developer</p>
-      </div>
+    <div class="header__title">
+      <h1 class="heading--main">Sonia Gorla</h1>
+      <p class="heading--main--sub">Front-End Web Developer</p>
+    </div>
 
-      <div class="header__body">
-        <img class="header__body--avatar" src="img/avatar.jpg" alt="Sonia's photo">
-        <p class="header__body--text">
-          <span class="text-strong">Who I am:</span>
-          A multilingual traveler passionate about languages, technology, and Web Development.
-          <br>An Italian-English-Spanish-Japanese translator, an avid learner of HTML, CSS, and JavaScript.
-        </p>
-        <ul>
-          <li class="contacts-link">
-            <label hidden id="linkedinLabel">Visit Sonia's profile on LinkedIn</label>
-            <a href="https://www.linkedin.com/in/soniagorla/" target="_blank" role="button" aria-labelledby="linkedinLabel" >
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="contacts-link">
-            <label hidden id="githubLabel">Visit Sonia's profile on Github</label>
-            <a href="https://github.com/Sonjya00" target="_blank" role="button" aria-labelledby="githubLabel">
-              <i class="fa fa-github"></i>
-            </a>
-          </li>
-          <li class="contacts-link">
-            <label hidden id="freecodecampLabel">Visit Sonia's profile on freecodecamp</label>
-            <a href="https://www.freecodecamp.org/sonjya00" target="_blank" role="button" aria-labelledby="freecodecampLabel"><i class="fa fa-free-code-camp"></i></a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <div class="header__body">
+      <img class="header__body--avatar" src="img/avatar.jpg" alt="Sonia's photo">
+      <p class="header__body--text">
+        <span class="text-strong">Who I am:</span>
+        A multilingual traveler passionate about languages, technology, and Web Development.
+        <br>An Italian-English-Spanish-Japanese translator, an avid learner of HTML, CSS, and JavaScript.
+      </p>
+    </div>
+
+  </header>
 
   <main class="main-content">
-    <section id="works" class="works__container">
+    <section id="works" class="works">
       <h2 class="heading-secondary">Featured Works <i class="fa fa-codepen"></i></h2>
 
       <div id="worksList" class="works__list">
@@ -112,41 +95,72 @@
     </section>
 
   </main>
+
   <footer class="footer__container">
+
     <div class="footer__location">
       <h3 class="heading--tertiary">Location</h3>
       <p>Austin, TX</p>
     </div>
+
     <div id="contacts" class="footer__contacts">
       <h3 class="heading--tertiary">Contacts and Social Media</h3>
-      <ul>
-        <li class="contacts-link">
+
+      <ul class="contacts__list">
+
+        <li class="contacts__list--item">
           <label hidden id="mailtoLabel">Send an email to Sonia</label>
-          <a href="mailto:soniagorla@msn.com" role="button" aria-labelledby="mailtoLabel">
+          <a class="contacts__list--item--link" href="mailto:soniagorla@msn.com" role="button" aria-labelledby="mailtoLabel">
             <i class="fa fa-envelope-o"></i>
           </a>
         </li>
-        <li class="contacts-link">
+
+        <li class="contacts__list--item">
+          <label hidden id="githubLabel">Visit Sonia's profile on Github</label>
+          <a class="contacts__list--item--link" href="https://github.com/Sonjya00" target="_blank" role="button" aria-labelledby="githubLabel">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+
+        <li class="contacts__list--item">
+          <label hidden id="freecodecampLabel">Visit Sonia's profile on freecodecamp</label>
+          <a class="contacts__list--item--link" href="https://www.freecodecamp.org/sonjya00" target="_blank" role="button" aria-labelledby="freecodecampLabel">
+            <i class="fa fa-free-code-camp"></i></a>
+        </li>
+
+        <li class="contacts__list--item">
+          <label hidden id="linkedinLabel">Visit Sonia's profile on LinkedIn</label>
+          <a class="contacts__list--item--link" href="https://www.linkedin.com/in/soniagorla/" target="_blank" role="button" aria-labelledby="linkedinLabel" >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="contacts__list--item">
           <label hidden id="facebookLabel">Visit Sonia's profile on Facebook</label>
-          <a href="https://www.facebook.com/sonia.gorla" target="_blank" role="button" aria-labelledby="facebookLabel">
+          <a class="contacts__list--item--link" href="https://www.facebook.com/sonia.gorla" target="_blank" role="button" aria-labelledby="facebookLabel">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
-        <li class="contacts-link">
+
+        <li class="contacts__list--item">
           <label hidden id="instagramLabel">Visit Sonia's profile on Instagram</label>
-          <a href="https://www.instagram.com/sonjya00/" target="_blank" role="button" aria-labelledby="instagramLabel">
+          <a class="contacts__list--item--link" href="https://www.instagram.com/sonjya00/" target="_blank" role="button" aria-labelledby="instagramLabel">
             <i class="fa fa-instagram"></i>
           </a>
         </li>
       </ul>
+
     </div>
+
     <div class="footer__awards">
       <h3 class="heading--tertiary">Awards</h3>
       <img class="google-banner" src="img/GrowWithGoogleDeveloperChallengeScholarship.jpg" alt="Grow With Google Developer Challange Scholarship banner">
     </div>
+
     <div class="footer__about">
       <p>© 2018 - Written and coded by Sonia Gorla</p>
     </div>
+
   </footer>
 
   <script src="js/script.js"></script>
