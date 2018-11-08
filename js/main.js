@@ -1,4 +1,14 @@
-let projects = [
+const projects = [
+  {
+    id: 9,
+    title: "Neighborhood Map App",
+    tools: "HTML, CSS, JS, React, Google Maps API, Foursquare",
+    img: "img/Neighborhood_Map.jpg",
+    url: "https://github.com/Sonjya00/Neighborhood-Map-App",
+    description:
+      "A single-page app made with React, Google Maps API, and Foursquare that displays select venues of a neighborhood.",
+    alt: "Neighborhood Map App"
+  },
   {
     id: 8,
     title: "MyReads React App",
@@ -59,16 +69,16 @@ let projects = [
       "A colorful card with a picture and some details about an animal",
     alt: "Panther Chameleon Trading Card"
   },
-  {
-    id: 2,
-    title: "Animal Trading Card 1",
-    tools: "HTML, CSS",
-    img: "img/Animal_Trading_Card1.jpg",
-    url: "https://codepen.io/Sonjya00/pen/dJjVxJ",
-    description:
-      "A colorful card with a picture and some details about an animal",
-    alt: "Black Panther Trading Card"
-  },
+  // {
+  //   id: 2,
+  //   title: "Animal Trading Card 1",
+  //   tools: "HTML, CSS",
+  //   img: "img/Animal_Trading_Card1.jpg",
+  //   url: "https://codepen.io/Sonjya00/pen/dJjVxJ",
+  //   description:
+  //     "A colorful card with a picture and some details about an animal",
+  //   alt: "Black Panther Trading Card"
+  // },
   {
     id: 1,
     title: "Fortune Cookie",
